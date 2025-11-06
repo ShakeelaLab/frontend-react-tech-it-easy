@@ -1,0 +1,32 @@
+.article {
+    padding: 80px 20px;
+    background-color: pink;
+    text-align: center;
+}
+
+.article:nth-child(1) {
+    border: 2px solid #4aa99d;
+    color: #4aa99d;
+    background-color: #eefbf9;
+}
+
+.article:nth-child(2) {
+    border: 2px solid #4b849c;
+    color: #4b849c;
+    background-color: #f1f6f9;
+}
+
+.article:nth-child(3) {
+    border: 2px solid #e45c3b;
+    color: #e45c3b;
+    background-color: #fdf0ec;
+}
+
+.inner-container {
+    max-width: 900px;
+}
+
+.div-article {
+    display: flex;
+    gap: 20px;
+}
