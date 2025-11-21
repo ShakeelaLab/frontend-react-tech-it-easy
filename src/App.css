@@ -1,0 +1,161 @@
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Areas
+        2.1 Button
+
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+html {
+    font-size: 62.5%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    margin: 30px;
+}
+
+:root {
+    --background-color-green: #eefbf9;
+    --background-color-blue: #f1f6f9;
+    --background-color-pink: #fdf0ec;
+}
+
+.inner-container, .outer-container > h1 {
+    margin: 20px 0;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+/* ------------------------------- 2. Areas ---------------------------------------- */
+
+.article {
+    background-color: pink;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.article p {
+    padding: 34px 78px;
+    font-size: 2rem;
+}
+
+.article:nth-child(1) {
+    border: 2px solid #4aa99d;
+    color: #4aa99d;
+    background-color: var(--background-color-green);
+}
+
+.article:nth-child(2) {
+    border: 2px solid #4b849c;
+    color: #4b849c;
+    background-color: var(--background-color-blue);
+}
+
+.article:nth-child(3) {
+    border: 2px solid #e45c3b;
+    color: #e45c3b;
+    background-color: var(--background-color-pink);
+}
+
+.inner-container {
+    max-width: 1100px;
+}
+
+.div-article {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.bestsold {
+    padding: 40px 40px;
+    background-color: #ededed;
+    border: 1px dashed black;
+    display: flex;
+}
+
+.bestseller-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.imgbestseller {
+    width: 300px;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    flex-shrink: 0;
+    margin-right: 19px;
+}
+
+.detailsbestseller p:nth-child(1) {
+    font-size: 2rem;
+}
+
+.detailsbestseller p:nth-child(2) {
+    font-size: 2.5rem;
+}
+
+.detailsbestseller p:nth-child(3) {
+    font-size: 1.8rem;
+}
+
+.detailsbestseller p, .specs  {
+    padding: 0 0 10px 10px;
+}
+
+.specs {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    font-size: 1.8rem;
+}
+
+.specs-container {
+    display: block;
+}
+
+.specs li img {
+    width: 16px;
+    margin: 0 8px 0 0;
+    vertical-align: middle;
+}
+
+/* --------------- 2.1 Button --------------------------- */
+
+
+button {
+    margin: 10px 10px 10px 0;
+    padding: 7px 13px;
+    font-size: 1.6rem;
+}
+
+.summarytv {
+    background-color: transparent;
+    border: none;
+}
+
+.sold-out-image {
+    width: 150px;
+    margin: 0 6px;
+    position: absolute;
+    top: -28px;
+    right: 954px;
+    rotate: -35deg;
+}
+
+.summarytv {
+    position: relative;
+}
